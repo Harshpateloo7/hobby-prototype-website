@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--Author      : Harshadkumar Patel
+    Number      : 000852665
+    Purpose     : This file is create for Assignment 2 Form Inforamtion page
+    Created on  : 2022/01/26 
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initital-scale=1">
+    <title>
+        Inforamtion
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Form about Interests</h1>
+        <p>Prepared by Harshadkumar Patel, 000852665</p>
+    </header>
+    <nav>
+        <ul class="pages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Form.html">Form</a></li>
+            <li>
+                <form action="https://csunix.mohawkcollege.ca/~adams/10259/formInputRepeater.php" method="post">
+                    <input type="hidden" form="login" value="login info">
+
+                    <label for="usrname">Username</label>
+                    <input type="text" id="usrname" placeholder="Enter Username" name="usrname" required>
+
+                    <label for="psw">Password</label>
+                    <input type="password" id="psw" placeholder="Enter Password" name="passw" minlength="8" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <section id="information">
+        <div class="formInfo">
+            <form action="https://csunix.mohawkcollege.ca/~adams/10259/formInputRepeater.php" method="post">
+                <input type="hidden" name="Inetrest" value="Interestinfo">
+                <fieldset class="about">
+                    <legend>About you</legend>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" required>
+                    <label for="Mname">Middle Name</label>
+                    <input type="text" id="Mname" name="Middlename">
+                    <label for="Lname">Last Name</label>
+                    <input type="text" id="Lname" name="Lastname" required>
+                    <label>Gender</label>
+                    <div class="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gen" value="male" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gen" value="female" id="female">
+                        <label for="others">Others</label>
+                        <input type="radio" name="gen" value="others" id="others">
+                    </div>
+                    <label for="emailID">Email</label>
+                    <input type="email" name="emailid" id="emailID" placeholder="name@example.com" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Please select your Campuses</legend>
+                    <label for="Clist">Campuse List</label>
+                    <select name="Campuselist" id="Clist">
+                        <option value="1">Fennell Campus (FF)</option>
+                        <option value="2">Stoney Creek Campus(SC)</option>
+                        <option value="3">MacMaster(IH)</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>What are you interested about?(Please select that all applly)</legend>
+                    <div>
+                        <input type="checkbox" name="Photo" value="photography" id="photoid">
+                        <label for="photoid">Photography</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="wdeveloping" value="webdeveloping" id="developing">
+                        <label for="developing">Web Developing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="travel" value="traveling" id="traveling">
+                        <label for="traveling">Traveling</label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Submit" class="info">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p> &copy;2022, Harshadkumar Patel, Student at Mohawk College</p>
+    </footer>
+
+
+</body>
+
+</html>

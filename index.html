@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--Author      : Harshadkumar Patel
+    Number      : 000852665
+    Purpose     : This file is create for Assignment 2 Home page
+    Created on  : 2022/01/25 
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initital-scale=1">
+    <title>Assignment02</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>COMP 10259 Assignment 2 Soluation </h1>
+        <p>Prepared by Harshadkumar Patel, 000852665</p>
+    </header>
+    <nav>
+        <ul class="pages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Form.html">Form</a></li>
+            <li>
+                <form action="https://csunix.mohawkcollege.ca/~adams/10259/formInputRepeater.php" method="post">
+                    <input type="hidden" form="login" value="login info">
+
+                    <label for="usrname">Username</label>
+                    <input type="text" id="usrname" placeholder="Enter Username" name="usrname" required>
+
+                    <label for="psw">Password</label>
+                    <input type="password" id="psw" placeholder="Enter Password" name="passw" minlength="8" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <h2>My INTERESTS</h2>
+    <main>
+        <div class="Photography">
+            <h3>I ENJOY DOING PHHTOGRAPHY:</h3>
+            <ul>
+                <li>Nature and landscape photography</li>
+                <li>Helps me to communicate my memories with others</li>
+                <li>I'm able to notice smaller details</li>
+                <li>I find joy in editing and using my creativity</li>
+            </ul>
+            <img src="images/IMG_0356.JPG" alt="landscape" class="imgsize">
+        </div>
+        <div class="Webdesign">
+            <h3>I ENJOY DEVELOPING WEBSITE:</h3>
+            <p>Hi there! This is Harshadkumar Patel, and I have completed a Bachelor of Computer Science & Engineering from a University in India. My passion for the computer field slowly developed from my early teenage years. I am always learning about
+                new technologies and the recent updates in the industry from various sources available out there. I am always passionate to developing website that meets bussiness needs.
+            </p>
+            <ul>
+                <li>I like to design different type of GUI</li>
+                <li>I am able to understand bussiness needs</li>
+                <li>I find joy in editing and creating different types of websites</li>
+            </ul>
+            <div class="animation">
+
+                <img src="images/animation.png" alt="animation" class="motion">
+
+            </div>
+        </div>
+        <div class="Travel">
+            <h3>I LOVE TO TRAVEL:</h3>
+            <ul>
+                <li>I like to visit different city</li>
+                <li>I like to meet different types of people and I want to know about different cultures</li>
+                <li>I want to try different types of food because I am foodie</li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FH2xu5K9MY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <p> &copy;2022, Harshadkumar Patel, Student at Mohawk College</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+/*  Author      : Harshadkumar Patel
+    Number      : 000852665
+    Purpose     : This file is create for Assignment 2 [Home page design style] and [Form page design style]
+    Created on  : 2022/01/25 
+*/
+
+
+/*This code is for whole body desgin*/
+
+body {
+    padding: 3em;
+    background-color: #E7DFDD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*This is Header design*/
+
+header {
+    text-align: center;
+    background-color: #0E0B16;
+    color: white;
+}
+
+
+/*This code is design animation */
+
+.animation {
+    text-align: center;
+}
+
+.motion {
+    width: 160px;
+    height: auto;
+    position: relative;
+    animation: top 10s infinite;
+    text-align: center;
+    padding: 30px;
+}
+
+@keyframes top {
+    from {
+        bottom: 1px;
+    }
+    to {
+        bottom: 200px;
+    }
+    to {
+        top: 2px;
+        opacity: 0.010;
+    }
+    from {
+        top: 100px;
+    }
+}
+
+
+/*This code is desgin navigation bar */
+
+nav {
+    background-color: #008793;
+    line-height: normal;
+    padding: 14px 16px;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #051937;
+    color: white;
+    padding: 5PX 5PX;
+    border: solid white 2PX;
+}
+
+
+/* This  code is desgin hover effect on Home bar and Form bar */
+
+nav a:hover {
+    color: #0172BA;
+    background-color: #003557;
+    border: solid #008793 2px;
+}
+
+nav a:active {
+    background-color: red;
+}
+
+nav li.pages {
+    padding: 14px 16px;
+}
+
+
+/*This is use to desgin login form */
+
+form {
+    float: right;
+    color: white;
+}
+
+h2,
+h3 {
+    text-align: center;
+    background-color: #008793;
+    color: white;
+}
+
+
+/*Grid is use to create columns and rows*/
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    padding: 2em;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    border: solid black 2px;
+}
+
+
+/*This code is use for desining form*/
+
+#information {
+    justify-content: center;
+    display: grid;
+    grid-column: auto;
+    margin: auto;
+}
+
+.formInfo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    margin: 10px auto;
+    color: black;
+}
+
+.about input {
+    display: block;
+}
+
+.about label {
+    width: 125px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.gender label,
+.gender input {
+    width: auto;
+    display: block;
+    margin: auto;
+    float: left;
+}
+
+.info {
+    border: 2px solid #051937;
+    font-weight: bold;
+}
+
+
+/*This code is use to desgin footer layout*/
+
+footer {
+    text-align: center;
+    border-top: solid #008793 5px;
+    padding: 3em;
+    background-color: #0E0B16;
+    color: white;
+}
